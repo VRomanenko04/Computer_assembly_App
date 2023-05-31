@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.active {
+    color: #7C6AFA;
+}
+
