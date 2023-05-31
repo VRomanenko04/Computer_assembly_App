@@ -1,19 +1,21 @@
 import React from 'react'
-import '../styles/layout.css';
-import { NavLink, Outlet } from 'react-router-dom';
+import cl from '../styles/layout.module.css';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 export const Layout = () => {
     return (
         <>
             <header>
+                <img src="/imgs/logo_computer.svg" alt="Logo"/>
                 <nav>
-                    <ul className='navbar'>
-                        <li><NavLink className='link' to='/'>Главная</NavLink></li>
-                        <li><NavLink className='link' to='/ready'>Готовые ПК</NavLink></li>
-                        <li><NavLink className='link' to='/individual'>Индивидуальная сборка</NavLink></li>
-                        <li><NavLink className='link' to='/contact'>Контакты</NavLink></li>
+                    <ul className={cl.navbar}>
+                        <li><NavLink className={cl.link} to='/'>Главная</NavLink></li>
+                        <li><NavLink className={cl.link} to='/ready'>Готовые ПК</NavLink></li>
+                        <li><NavLink className={cl.link} to='/individual'>Индивидуальная сборка</NavLink></li>
+                        <li><NavLink className={cl.link} to='/contact'>Контакты</NavLink></li>
                     </ul>
                 </nav>
+                <Link className={cl.btn}>Зайти в кабинет</Link>
             </header>
 
             <main>
@@ -21,7 +23,7 @@ export const Layout = () => {
             </main>
 
             <footer>
-                <p>2023</p>
+                <p></p>
             </footer>
         </>
     )

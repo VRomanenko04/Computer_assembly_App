@@ -1,0 +1,29 @@
+.header {
+    margin-top: -100px;
+    background: url(/public/imgs/main-screen__bgc.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    height: 800px;
+}
+
+.head__text {
+    color: #fff;
+    font-weight: 700;
+    font-size: 58px;
+    margin-top: 250px;
+    margin-left: 100px;
+}
+
+.head__btn {
+    color: #FFFFFF;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
