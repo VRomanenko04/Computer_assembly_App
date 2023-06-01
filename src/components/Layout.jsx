@@ -1,6 +1,7 @@
 import React from 'react'
-import cl from '../styles/layout.module.css';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import '../styles/layout.css';
+import { NavLink, Outlet } from 'react-router-dom';
+import { Button } from '../UI/Button/Button';
 
 export const Layout = () => {
     return (
@@ -8,14 +9,14 @@ export const Layout = () => {
             <header>
                 <img src="/imgs/logo_computer.svg" alt="Logo"/>
                 <nav>
-                    <ul className={cl.navbar}>
-                        <li><NavLink className={cl.link} to='/'>Главная</NavLink></li>
-                        <li><NavLink className={cl.link} to='/ready'>Готовые ПК</NavLink></li>
-                        <li><NavLink className={cl.link} to='/individual'>Индивидуальная сборка</NavLink></li>
-                        <li><NavLink className={cl.link} to='/contact'>Контакты</NavLink></li>
+                    <ul className='navbar'>
+                        <li><NavLink className={`link`} to='/'>Главная</NavLink></li>
+                        <li><NavLink className={'link'} to='/ready'>Готовые ПК</NavLink></li>
+                        <li><NavLink className={'link'} to='/individual'>Индивидуальная сборка</NavLink></li>
+                        <li><NavLink className={'link'} to='/contact'>Контакты</NavLink></li>
                     </ul>
                 </nav>
-                <Link className={cl.btn}>Зайти в кабинет</Link>
+                <Button text='Зайти в кабинет'/>
             </header>
 
             <main>
