@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/layout.css';
 import { NavLink, Outlet } from 'react-router-dom';
 import { Button } from '../UI/Button/Button';
+import { Footer } from './Footer';
 
 export const Layout = () => {
     return (
@@ -24,7 +25,7 @@ export const Layout = () => {
             </main>
 
             <footer>
-                <p></p>
+                <Footer/>
             </footer>
         </>
     )

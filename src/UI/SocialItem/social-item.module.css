@@ -1,0 +1,19 @@
+.social__item {
+    display: flex;
+    justify-content: center;
+}
+
+.elipse {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50%;
+}
+
+.social__img {
+    position: relative;
+    top: 12px;
+    height: 25px;
+    width: 25px;
+}

@@ -12,12 +12,6 @@ body {
   position: relative;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  color: #FFFFFF;
-}
-
 h1,h2,p {
   color: #fff;
 }
