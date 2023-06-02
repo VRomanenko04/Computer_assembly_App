@@ -7,6 +7,7 @@ header {
     background: none;
 }
 
+/* MENU */
 .navbar {
     display: flex;
     flex-direction: row;
