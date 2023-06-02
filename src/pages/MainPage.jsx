@@ -9,6 +9,15 @@ export default function MainPage() {
             <h1 className={classes.head__text}>От заказа <br /> до индивидуального ПК <br /> всего неделя</h1>
             <Button text='Заказать ПК' additionalClass={classes.head__btn}/>
         </header>
+        <main>
+            <section className={classes.about__us}>
+                <img src="/imgs/about__img.png" alt=''/>
+                <article>
+                    <h2 className={classes.about_us_head}>Чем мы занимаемся?</h2>
+                    <p className={classes.about_us_text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias saepe. Pariatur natus itaque quisquam voluptatibus repellendus fuga alias maiores. Non quasi dolore amet earum, nulla architecto ab fugit iste.</p>
+                </article>
+            </section>
+        </main>
         </>
     )
 }
