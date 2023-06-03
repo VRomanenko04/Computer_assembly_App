@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import '../styles/layout.css';
 import { NavLink, Outlet } from 'react-router-dom';
 import { Button } from '../UI/Button/Button';
@@ -17,7 +17,7 @@ export const Layout = () => {
                         <li><NavLink className={'link'} to='/contact'>Контакты</NavLink></li>
                     </ul>
                 </nav>
-                <Button text='Зайти в кабинет'/>
+                <Button link='/cabinet' text='Зайти в кабинет'/>
             </header>
 
             <main>

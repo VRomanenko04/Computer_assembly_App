@@ -1,0 +1,17 @@
+.about__us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+}
+
+.about_us_head {
+    font-size: 40px;
+}
+
+.about_us_text {
+    max-width: 400px;
+    margin-top: 50px;
+    line-height: 1.7em;
+}
