@@ -1,0 +1,21 @@
+.container {
+    height: 80svh;
+    margin: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.map {
+    border: 0;
+    height: 400px;
+    width: 500px;
+}
+
+.contact__text {
+    padding: 30px;
+    line-height: 1.5em;
+    font-size: 20px;
+    border: 2px solid #7C6AFA;
+}
