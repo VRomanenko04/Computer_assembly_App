@@ -1,6 +1,6 @@
 import React from 'react'
 import cl from '../styles/footer.module.css'
-import { SocialItem } from '../UI/SocialItem/SocialItem'
+import { SocialItem } from './UI/SocialItem/SocialItem'
 
 export const Footer = () => {
     return (

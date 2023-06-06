@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from '../styles/mainpage.module.css';
-import { Button } from '../UI/Button/Button';
+import { Button } from '../components/UI/Button/Button';
 import { AboutUs } from '../components/Blocks/AboutUsBlock/AboutUs';
 import { Partners } from '../components/Blocks/PartnersBlock/Partners';
 
