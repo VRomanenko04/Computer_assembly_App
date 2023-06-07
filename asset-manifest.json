@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Computer_assembly_App/static/css/main.b10208e2.css",
-    "main.js": "/Computer_assembly_App/static/js/main.ee40e33e.js",
+    "main.js": "/Computer_assembly_App/static/js/main.d301c246.js",
     "static/media/main-screen__bgc.jpg": "/Computer_assembly_App/static/media/main-screen__bgc.6229175e98578d37e79f.jpg",
     "index.html": "/Computer_assembly_App/index.html",
     "main.b10208e2.css.map": "/Computer_assembly_App/static/css/main.b10208e2.css.map",
-    "main.ee40e33e.js.map": "/Computer_assembly_App/static/js/main.ee40e33e.js.map"
+    "main.d301c246.js.map": "/Computer_assembly_App/static/js/main.d301c246.js.map"
   },
   "entrypoints": [
     "static/css/main.b10208e2.css",
-    "static/js/main.ee40e33e.js"
+    "static/js/main.d301c246.js"
   ]
 }
