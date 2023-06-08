@@ -7,13 +7,13 @@ export const Footer = () => {
         <div className={cl.footer}>
             <div className={cl.social__container}>
                 <a href='https://www.youtube.com'>
-                    <SocialItem link='/imgs/youtube_comp.svg'/>
+                    <SocialItem link='/Computer_assembly_App/imgs/youtube_comp.svg'/>
                 </a>
                 <a href='https://www.facebook.com'>
-                    <SocialItem link='/imgs/facebook_comp.svg'/>
+                    <SocialItem link='/Computer_assembly_App/imgs/facebook_comp.svg'/>
                 </a>
                 <a href='https://www.instagram.com'>
-                    <SocialItem link='/imgs/instagram_comp.svg'/>
+                    <SocialItem link='/Computer_assembly_App/imgs/instagram_comp.svg'/>
                 </a>
             </div>
             <p className={cl.footer_text}>OutPC ©Copr. 2023</p>
