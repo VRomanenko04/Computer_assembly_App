@@ -1,0 +1,47 @@
+export const readyPc = [
+    {
+        head: "'Экономная'", 
+        proc: 'INTEL CORЕ I3-10100F', 
+        videocard: 'GTX 1060 6GB', 
+        ram: 'RAM 8GB', 
+        memory: 'HD 500GB | SSD 120GB',
+        photo: '/Computer_assembly_App/imgs/computer1.png',
+        price: '22000',
+    },
+    {
+        head: "'SUPER'",
+        proc: 'INTEL CORE I5-12400F', 
+        videocard: 'RTX 3060 12GB', 
+        ram: 'RAM 32GB', 
+        memory: 'M.2 1TB',
+        photo: '/Computer_assembly_App/imgs/computer2.png',
+        price: '45000',
+    },
+    {
+        head: "'Комфорт'",
+        proc: 'RYZEN 5 5500', 
+        videocard: 'NVIDIA RTX 3060 12GB', 
+        ram: 'RAM 32GB', 
+        memory: 'SSD 960GB',
+        photo: '/Computer_assembly_App/imgs/computer3.png',
+        price: '39500',
+    },
+    {
+        head: "'ULTRA'", 
+        proc: 'INTEL CORE I7-11700KF', 
+        videocard: 'RTX3070TI 8GB', 
+        ram: 'RAM 32 GB', 
+        memory: 'M.2 1 TB | HDD 120 GB',
+        photo: '/Computer_assembly_App/imgs/computer4.png',
+        price: '72000',
+    },
+    {
+        head: "'4К'", 
+        proc: 'INTEL CORE I7-10700F',
+        videocard: 'RTX 3060 12G', 
+        ram: 'RAM 32GB', 
+        memory: 'M.2 1TB',
+        photo: '/Computer_assembly_App/imgs/computer5.png',
+        price: '53500',
+    }
+]
