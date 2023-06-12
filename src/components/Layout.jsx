@@ -8,7 +8,7 @@ export const Layout = () => {
     return (
         <>
             <header>
-                <img src="/Computer_assembly_App/imgs/logo_computer.svg" alt="Logo"/>
+                <img className='logo' src="/Computer_assembly_App/imgs/logo_computer.svg" alt="Logo"/>
                 <Navbar/>
             </header>
 
