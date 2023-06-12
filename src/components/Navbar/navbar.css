@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav__li {
+    margin: 0 30px;
+}
+
+.link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.link:hover {
+    border-bottom: 1.5px solid #FFFFFF;
+}
+
+.active {
+    color: #7C6AFA;
+}
