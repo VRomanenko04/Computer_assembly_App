@@ -31,17 +31,26 @@ export const readyPc = [
         proc: 'INTEL CORE I7-11700KF', 
         videocard: 'RTX3070TI 8GB', 
         ram: 'RAM 32 GB', 
-        memory: 'M.2 1 TB | HDD 120 GB',
+        memory: 'M.2 1TB | HDD 120GB',
         photo: '/Computer_assembly_App/imgs/computer4.png',
         price: '72000',
     },
     {
         head: "'4К'", 
         proc: 'INTEL CORE I7-10700F',
-        videocard: 'RTX 3060 12G', 
+        videocard: 'RTX 3060 12GB', 
         ram: 'RAM 32GB', 
         memory: 'M.2 1TB',
         photo: '/Computer_assembly_App/imgs/computer5.png',
         price: '53500',
+    },
+    {
+        head: "'Запоминающаяся'", 
+        proc: 'INTEL CORE I5-12400F',
+        videocard: 'RTX 3060 12GB', 
+        ram: 'RAM 16GB', 
+        memory: 'SSD 512GB | HDD 2TB',
+        photo: '/Computer_assembly_App/imgs/computer6.png',
+        price: '44000',
     }
 ]
