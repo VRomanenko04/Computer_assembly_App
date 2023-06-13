@@ -11,10 +11,12 @@
 }
 
 .head__text {
+    position: relative;
     font-weight: 700;
     font-size: 58px;
     margin-top: 250px;
     margin-left: 100px;
+    z-index: 1;
 }
 
 .head__btn {
