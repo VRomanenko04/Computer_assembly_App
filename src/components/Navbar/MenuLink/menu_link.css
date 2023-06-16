@@ -1,0 +1,23 @@
+.nav__li {
+    margin: 0 30px;
+}
+
+.link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.link:hover {
+    border-bottom: 1.5px solid #FFFFFF;
+}
+
+.active {
+    color: #7C6AFA;
+}
+
+@media screen and (max-width: 1040px) {
+    .nav__li {
+        margin-top: 40px;
+    }
+}

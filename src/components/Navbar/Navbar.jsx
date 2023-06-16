@@ -2,7 +2,7 @@ import './navbar.css';
 import React, { useState } from 'react';
 import { Button } from '../UI/Button/Button';
 import { BurgerBtn } from '../UI/BurgerBtn/BurgerBtn';
-import { NavLink } from 'react-router-dom';
+import { MenuLink } from './MenuLink/MenuLink';
 import { AnimatePresence, motion } from 'framer-motion';
 import Media from 'react-media';
 
@@ -22,20 +22,6 @@ export const Navbar = () => {
             }
         });
     }
-
-    const MenuLink = ({ link, text, matches, isOpen }) => {
-        return (
-            <motion.li
-            className='nav__li'
-            initial={{ x: matches.small ? 300 : 0 }}
-            animate={{ x: isOpen ? 0 : (matches.small ? 1000 : 0) }}
-            transition={{ duration: 1, delay: 0.5 }}
-            >
-                <NavLink className='link' to={link}>{text}</NavLink>
-            </motion.li>
-        )
-    }
-
 
     return (
         <header>
@@ -61,7 +47,7 @@ export const Navbar = () => {
                                     <motion.li 
                                         className='nav__li' 
                                         initial={{ x: matches.small ? 300 : 0 }}
-                                        animate={{ x: isOpen ? 0 : (matches.small ? 1000 : 0)}}
+                                        animate={{ x: isOpen ? 0 : (matches.small ? 700 : 0)}}
                                         transition={{ duration: 1, delay: 0.5 }}>
                                         <Button link='/cabinet' text='Зайти в кабинет'/>
                                     </motion.li>
