@@ -22,6 +22,20 @@ export const Navbar = () => {
         });
     }
 
+    const MenuLink = ({ link, text, delay, matches, isOpen }) => {
+        return (
+            <motion.li
+            className='nav__li'
+            initial={{ x: matches.small ? 300 : 0 }}
+            animate={{ x: isOpen ? 0 : (matches.small ? 1000 : 0) }}
+            transition={{ duration: 1, delay: 0.5 }}
+            >
+                <NavLink className='link' to={link}>{text}</NavLink>
+            </motion.li>
+        )
+    }
+
+
     return (
         <header>
             <img className='logo' src="/Computer_assembly_App/imgs/logo_computer.svg" alt="Logo"/>
@@ -39,43 +53,15 @@ export const Navbar = () => {
                                 transition={{ duration: 0.5 }}
                             >
                                 <ul className={`nav__list ${isOpen ? 'active__menu' : ''}`}>
-                                    <motion.li 
-                                        className='nav__li'
-                                        initial={{ x: matches.small ? 300 : 0 }}
-                                        animate={{ x: isOpen ? 0 : (matches.small ? 1000 : 0)}}
-                                        transition={{ duration: 1 }}
-                                    >
-                                        <NavLink className='link' to='/'>Главная</NavLink>
-                                    </motion.li>
-                                    <motion.li 
-                                        className='nav__li'
-                                        initial={{ x: matches.small ? 300 : 0 }}
-                                        animate={{ x: isOpen ? 0 : (matches.small ? 1000 : 0)}}
-                                        transition={{ duration: 1, delay: 0.1 }}
-                                    >
-                                        <NavLink className='link' to='/ready'>Готовые ПК</NavLink>
-                                    </motion.li>
-                                    <motion.li 
-                                        className='nav__li'
-                                        initial={{ x: matches.small ? 300 : 0 }}
-                                        animate={{ x: isOpen ? 0 : (matches.small ? 1000 : 0)}}
-                                        transition={{ duration: 1, delay: 0.2 }}
-                                    >
-                                        <NavLink className='link' to='/individual'>Индивидуальная сборка</NavLink>
-                                    </motion.li>
-                                    <motion.li 
-                                        className='nav__li'
-                                        initial={{ x: matches.small ? 300 : 0 }}
-                                        animate={{ x: isOpen ? 0 : (matches.small ? 1000 : 0)}}
-                                        transition={{ duration: 1, delay: 0.3 }}
-                                    >
-                                        <NavLink className='link' to='/contact'>Контакты</NavLink>
-                                    </motion.li>
+                                    <MenuLink link='/' text='Главная' matches={matches} isOpen={isOpen} />
+                                    <MenuLink link='/ready' text='Готовые ПК' matches={matches} isOpen={isOpen} />
+                                    <MenuLink link='/individual' text='Индивидуальная сборка' matches={matches} isOpen={isOpen} />
+                                    <MenuLink link='/contact' text='Контакты' matches={matches} isOpen={isOpen} />
                                     <motion.li 
                                         className='nav__li' 
                                         initial={{ x: matches.small ? 300 : 0 }}
                                         animate={{ x: isOpen ? 0 : (matches.small ? 1000 : 0)}}
-                                        transition={{ duration: 1, delay: 0.4 }}>
+                                        transition={{ duration: 1, delay: 0.5 }}>
                                         <Button link='/cabinet' text='Зайти в кабинет'/>
                                     </motion.li>
                                 </ul>

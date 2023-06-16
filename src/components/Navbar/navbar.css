@@ -13,22 +13,12 @@ header {
     flex-direction: row;
 }
 
-.nav__body {
-    margin-right: 50px;
-}
-
-.logo {
-    height: 45px;
-    width: 45px;
-    margin-left: 50px;
-}
-
-.menu__wrapper button {
-    display: none;
-}
-
 .nav__li {
     margin: 0 30px;
+}
+
+.nav__body {
+    margin-right: 50px;
 }
 
 .link {
@@ -43,6 +33,16 @@ header {
 
 .active {
     color: #7C6AFA;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+    margin-left: 50px;
+}
+
+.menu__wrapper button {
+    display: none;
 }
 
 @media screen and (max-width: 1040px) {
