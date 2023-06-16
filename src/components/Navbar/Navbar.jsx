@@ -1,6 +1,7 @@
 import './navbar.css';
 import React, { useState } from 'react';
 import { Button } from '../UI/Button/Button';
+import { BurgerBtn } from '../UI/BurgerBtn/BurgerBtn';
 import { NavLink } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Media from 'react-media';
@@ -22,7 +23,7 @@ export const Navbar = () => {
         });
     }
 
-    const MenuLink = ({ link, text, delay, matches, isOpen }) => {
+    const MenuLink = ({ link, text, matches, isOpen }) => {
         return (
             <motion.li
             className='nav__li'
@@ -40,7 +41,7 @@ export const Navbar = () => {
         <header>
             <img className='logo' src="/Computer_assembly_App/imgs/logo_computer.svg" alt="Logo"/>
             <div className='menu__wrapper'>
-                {isOpen ? <button onClick={handleMenu}>Close</button> : <button onClick={handleMenu}>Open</button>}
+                <BurgerBtn isOpen={isOpen} handleMenu={handleMenu}/>
                 <div className='nav nav__vision' style={hideOrShow}>
                     <nav className='nav__body'>
                     <Media queries={{ small: '(max-width: 1040px)' }}>

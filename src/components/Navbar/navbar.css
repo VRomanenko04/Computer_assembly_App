@@ -41,25 +41,10 @@ header {
     margin-left: 50px;
 }
 
-.menu__wrapper button {
-    display: none;
-}
-
 @media screen and (max-width: 1040px) {
-
     .nav__body {
         margin-top: 700px;
         margin-right: 0;
-    }
-
-    .menu__wrapper button {
-        display: block;
-        color: #7C6AFA;
-        font-size: 1.5em;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        z-index: 3;
     }
 
     .nav__list {
