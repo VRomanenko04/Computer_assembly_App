@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Computer_assembly_App/static/css/main.f1fa4805.css",
-    "main.js": "/Computer_assembly_App/static/js/main.bbf6d78c.js",
+    "main.css": "/Computer_assembly_App/static/css/main.04ab5d9d.css",
+    "main.js": "/Computer_assembly_App/static/js/main.699f3433.js",
     "static/media/main-screen__bgc.jpg": "/Computer_assembly_App/static/media/main-screen__bgc.6229175e98578d37e79f.jpg",
     "index.html": "/Computer_assembly_App/index.html",
-    "main.f1fa4805.css.map": "/Computer_assembly_App/static/css/main.f1fa4805.css.map",
-    "main.bbf6d78c.js.map": "/Computer_assembly_App/static/js/main.bbf6d78c.js.map"
+    "main.04ab5d9d.css.map": "/Computer_assembly_App/static/css/main.04ab5d9d.css.map",
+    "main.699f3433.js.map": "/Computer_assembly_App/static/js/main.699f3433.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1fa4805.css",
-    "static/js/main.bbf6d78c.js"
+    "static/css/main.04ab5d9d.css",
+    "static/js/main.699f3433.js"
   ]
 }
