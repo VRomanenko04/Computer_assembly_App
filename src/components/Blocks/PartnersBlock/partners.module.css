@@ -1,11 +1,13 @@
 .partners {
     height: 500px;
+    margin-top: 150px;
 }
 
 .partners_head {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     margin-right: 100px;
     margin-top: 100px;
 }
@@ -28,7 +30,7 @@
     grid-gap: 30px;
 }
 
-.partner {
+.partner__img {
     height: 80px;
     width: 150px;
     padding: 10px;
@@ -37,4 +39,28 @@
 .grid_container {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .partners {
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .partners_head {
+        margin-right: 0;
+    }
+    .partners_logo {
+        margin-left: 30px;
+    }
+    .partners_text {
+        font-size: 28px;
+    }
+    .grid_comp {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .partner__img {
+        height: 50px;
+        width: 90px;
+    }
 }

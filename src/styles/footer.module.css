@@ -9,11 +9,10 @@ footer {
 .social__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
     margin-bottom: 50px;
 }
 
 .footer_text {
-    margin-left: 5px;
+    margin-left: 10px;
 }

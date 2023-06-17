@@ -15,3 +15,23 @@
     margin-top: 50px;
     line-height: 1.7em;
 }
+
+@media screen and (max-width: 800px) {
+    .about__us {
+        flex-direction: column-reverse;
+        margin-top: 120px;
+        height: 500px;
+    }
+    .about_us_head {
+        margin-left: 20px;
+        font-size: 32px;
+    }
+    .about_us_text {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .about__img {
+        height: 300px;
+        width: 300px;
+    }
+}

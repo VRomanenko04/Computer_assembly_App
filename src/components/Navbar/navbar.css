@@ -48,3 +48,9 @@ header {
         height: 200vh;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .nav__list {
+        width: 80%;
+    }
+}

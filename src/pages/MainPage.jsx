@@ -8,8 +8,11 @@ export default function MainPage() {
     return (
         <>
         <header className={classes.header}>
-            <h1 className={classes.head__text}>От заказа <br /> до индивидуального ПК <br /> всего неделя</h1>
-            <Button link='/individual' text='Заказать ПК' additionalClass={classes.head__btn}/>
+            <div className={classes.main__side}>
+                <h1 className={classes.head__text}>От заказа <br /> до индивидуального ПК <br /> всего неделя</h1>
+                <Button link='/individual' text='Заказать ПК' additionalClass={classes.head__btn}/>
+            </div>
+            <img className={classes.head__img} src="/Computer_assembly_App/imgs/main_comp.png" alt="" />
         </header>
         <main>
             <AboutUs/>

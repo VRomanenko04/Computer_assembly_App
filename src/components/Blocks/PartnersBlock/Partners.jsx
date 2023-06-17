@@ -10,14 +10,14 @@ export const Partners = () => {
             </div>
             <div className={classes.grid_container}>
                 <div className={classes.grid_comp}>
-                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner}/>
-                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner}/>
-                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner}/>
-                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner}/>
-                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner}/>
-                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner}/>
-                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner}/>
-                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner}/>
+                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner__img}/>
+                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner__img}/>
+                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner__img}/>
+                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner__img}/>
+                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner__img}/>
+                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner__img}/>
+                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner__img}/>
+                    <img src="/Computer_assembly_App/imgs/logo_msi.png" alt="" className={classes.partner__img}/>
                 </div>
             </div>
         </section>
