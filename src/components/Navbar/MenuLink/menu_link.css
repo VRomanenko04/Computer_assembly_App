@@ -21,3 +21,12 @@
         margin-top: 40px;
     }
 }
+
+@media screen and (min-width: 1600px) {
+    .link {
+        font-size: 1.5em;
+    }
+    .link:hover {
+        border-bottom: 2.5px solid #FFFFFF;
+    }
+}
