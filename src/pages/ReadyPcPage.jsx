@@ -22,8 +22,8 @@ export const ReadyPcPage = () => {
         <main className={classes.main}>
             <div className={classes.select_container}>
                 <select className={classes.select} value={sortOrder} onChange={handleSortChange}>
-                    <option className={classes.option} value="asc">По возрастанию цены</option>
-                    <option className={classes.option} value="desc">По убыванию цены</option>
+                    <option value="asc">По возрастанию цены</option>
+                    <option value="desc">По убыванию цены</option>
                 </select>
             </div>
             <section className={classes.container}>

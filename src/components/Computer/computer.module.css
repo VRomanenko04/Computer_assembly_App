@@ -38,3 +38,9 @@
 .button {
     margin-top: 10px;
 }
+
+@media screen and (max-width: 400px) {
+    .block__container {
+        width: 280px;
+    }
+}
