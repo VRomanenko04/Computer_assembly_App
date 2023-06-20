@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import classes from '../styles/cabinet.module.css';
+import { UserData } from '../components/Blocks/UserDataBlock/UserData';
 
 export const CabinetPage = () => {
     const [isDataOpen, setIsDataOpen] = useState(true);
@@ -42,7 +43,7 @@ export const CabinetPage = () => {
                     ))}
                 </div>
                 <div className={classes.changing__side}>
-                    {isDataOpen && (<p>Data</p>)}
+                    {isDataOpen && (<UserData/>)}
                     {isDelivery && (<p>Delivery</p>)}
                     {isOrders && (<p>Orders</p>)}
                     {isSupport && (<p>Support</p>)}
