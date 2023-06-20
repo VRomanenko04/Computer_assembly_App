@@ -1,6 +1,6 @@
 import './navbar.css';
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { Button } from '../UI/Button/Button';
 import { BurgerBtn } from '../UI/BurgerBtn/BurgerBtn';
 import { MenuLink } from './MenuLink/MenuLink';
@@ -31,7 +31,9 @@ export const Navbar = () => {
 
     return (
         <header>
-            <img className='logo' src="/Computer_assembly_App/imgs/logo_computer.svg" alt="Logo"/>
+            <Link to='/'>
+                <img className='logo' src="/Computer_assembly_App/imgs/logo_computer.svg" alt="Logo"/>
+            </Link>
             <div className='menu__wrapper'>
                 <BurgerBtn isOpen={isOpen} handleMenu={handleMenu}/>
                 <div className='nav nav__vision' style={hideOrShow}>
