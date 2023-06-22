@@ -1,0 +1,9 @@
+.text {
+    margin-bottom: 10px;
+}
+
+.input {
+    border: 2px solid #7C6AFA;
+    border-radius: 5px;
+    padding: 10px;
+}

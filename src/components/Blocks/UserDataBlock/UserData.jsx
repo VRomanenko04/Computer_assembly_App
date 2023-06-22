@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import {Button} from '../../UI/Button/Button.jsx';
 import classes from './userdata.module.css';
+import { InputField } from '../../UI/InputField/InputField.jsx';
 
 export const UserData = () => {
     const [firstName, setFirstName] = useState('');
@@ -42,45 +42,27 @@ export const UserData = () => {
     return (
         <form className={classes.form} onSubmit={handleSubmit}>
             <div className={classes.input__div}>
-                <p className={classes.text} htmlFor="firstName">Имя:</p>
-                <input
-                    className={classes.input}
-                    type="text"
-                    id="firstName"
-                    value={firstName}
+                <InputField text="Имя:" type="text" id="firstName" 
+                    value={firstName} 
                     onChange={(e) => setFirstName(e.target.value)}
                 />
             </div>
             <div className={classes.input__div}>
-                <p className={classes.text} htmlFor="lastName">Фамилия:</p>
-                <input
-                    className={classes.input}
-                    type="text"
-                    id="lastName"
-                    value={lastName}
+                <InputField text="Фамилия:" type="text" id="lastName" 
+                    value={lastName} 
                     onChange={(e) => setLastName(e.target.value)}
                 />
             </div>
             <div className={classes.input__div}>
-                <p className={classes.text} htmlFor="phone">Телефон:</p>
-                <input
-                    className={classes.input}
-                    type="text"
-                    id="phone"
-                    value={phone}
+                <InputField text="Телефон:" type="text" id="phone" placeholder='050 000 0000'
+                    value={phone} 
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder='050 000 0000'
                 />
             </div>
             <div className={classes.input__div}>
-                <p className={classes.text} htmlFor="email">E-mail:</p>
-                <input
-                    className={classes.input}
-                    type="email"
-                    id="email"
-                    value={email}
+                <InputField text="E-mail:" type="email" id="email" placeholder='mail@gmail.com'
+                    value={email} 
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder='mail@gmail.com'
                 />
             </div>
             <button className={classes.btn}>Сохранить</button>
