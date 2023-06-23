@@ -1,0 +1,19 @@
+.container {
+    border: 1px solid #fff;
+    min-height: 50%;
+}
+
+.order__block {
+    border: 1px solid #fff;
+    margin: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+
+.empty__orders {
+    text-align: center;
+    font-size: 1.4em;
+}

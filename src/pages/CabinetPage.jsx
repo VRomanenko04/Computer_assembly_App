@@ -3,6 +3,7 @@ import classes from '../styles/cabinet.module.css';
 import { UserData } from '../components/Blocks/UserData';
 import { Delivery } from '../components/Blocks/Delivery';
 import { Support } from '../components/Blocks/Support';
+import { Orders } from '../components/Blocks/OrderBlock/Orders';
 
 export const CabinetPage = () => {
     const [isDataOpen, setIsDataOpen] = useState(true);
@@ -47,7 +48,7 @@ export const CabinetPage = () => {
                 <div className={classes.changing__side}>
                     {isDataOpen && (<UserData/>)}
                     {isDelivery && (<Delivery/>)}
-                    {isOrders && (<p>Orders</p>)}
+                    {isOrders && (<Orders/>)}
                     {isSupport && (<Support/>)}
                 </div>
             </div>
