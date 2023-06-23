@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import { InputField } from '../../UI/InputField/InputField.jsx';
-import classes from './delivery.module.css';
+import { InputField } from '../UI/InputField/InputField.jsx';
+import classes from '../../styles/cabinetParts.module.css';
 
 export const Delivery = () => {
     const [City, setCity] = useState('');

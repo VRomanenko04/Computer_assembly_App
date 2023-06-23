@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import classes from './userdata.module.css';
-import { InputField } from '../../UI/InputField/InputField.jsx';
+import classes from '../../styles/cabinetParts.module.css';
+import { InputField } from '../UI/InputField/InputField.jsx';
 
 export const UserData = () => {
     const [firstName, setFirstName] = useState('');

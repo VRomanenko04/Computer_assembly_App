@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import classes from '../styles/cabinet.module.css';
-import { UserData } from '../components/Blocks/UserDataBlock/UserData';
-import { Delivery } from '../components/Blocks/DeliveryBlock/Delivery';
+import { UserData } from '../components/Blocks/UserData';
+import { Delivery } from '../components/Blocks/Delivery';
+import { Support } from '../components/Blocks/Support';
 
 export const CabinetPage = () => {
     const [isDataOpen, setIsDataOpen] = useState(true);
@@ -47,7 +48,7 @@ export const CabinetPage = () => {
                     {isDataOpen && (<UserData/>)}
                     {isDelivery && (<Delivery/>)}
                     {isOrders && (<p>Orders</p>)}
-                    {isSupport && (<p>Support</p>)}
+                    {isSupport && (<Support/>)}
                 </div>
             </div>
         </main>
