@@ -3,8 +3,15 @@ import cl from './Button.module.css';
 import { Link } from 'react-router-dom';
 
 export const Button = (props) => {
-    const buttonClassName = `${cl.btn} ${props.additionalClass}`;
+    const {
+        link,
+        additionalClass,
+        text
+    } = props;
+
+    const buttonClassName = `${cl.btn} ${additionalClass}`;
+
     return (
-        <Link to={props.link} className={buttonClassName}>{props.text}</Link>
+        <Link to={link} className={buttonClassName}>{text}</Link>
     )
 }

@@ -1,7 +1,12 @@
 import React from 'react';
 import cl from './burgerbtn.module.css';
 
-export const BurgerBtn = ({handleMenu, isOpen}) => {
+export const BurgerBtn = (props) => {
+    const {
+        handleMenu,
+        isOpen
+    } = props;
+    
     return (
         <div className={cl.burger__btn} onClick={handleMenu}>
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

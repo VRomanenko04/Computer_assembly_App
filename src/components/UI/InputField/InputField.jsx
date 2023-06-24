@@ -2,7 +2,6 @@ import React from 'react';
 import classes from './inputfield.module.css';
 
 export const InputField = (props) => {
-
     const {
         text,
         type,

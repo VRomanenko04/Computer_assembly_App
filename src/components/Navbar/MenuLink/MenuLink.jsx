@@ -3,7 +3,14 @@ import './menu_link.css';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-export const MenuLink = ({ link, text, matches, isOpen }) => {
+export const MenuLink = (props) => {
+    const {
+        link,
+        text,
+        matches,
+        isOpen
+    } = props;
+    
     return (
         <motion.li
         className='nav__li'
