@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 500px;
+    min-height: 500px;
 }
 
 .buttons {
@@ -36,4 +36,21 @@
 .active {
     background-color: #fff;
     color: #000;
+}
+
+@media screen and (max-width: 670px) {
+    .btn:not(.active):hover {
+        background: none;
+        color: #fff;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .changing__side {
+        width: auto;
+        border-top: none;
+        border-left: 1px solid #fff;;
+    }
 }
