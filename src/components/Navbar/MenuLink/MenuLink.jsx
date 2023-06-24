@@ -14,9 +14,9 @@ export const MenuLink = (props) => {
     return (
         <motion.li
         className='nav__li'
-        initial={{ x: matches.small ? 300 : 0 }}
+        initial={{ x: matches.small ? -100 : 0 }}
         animate={{ x: isOpen ? 0 : (matches.small ? 500 : 0) }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
         >
             <NavLink className='link' to={link}>{text}</NavLink>
         </motion.li>

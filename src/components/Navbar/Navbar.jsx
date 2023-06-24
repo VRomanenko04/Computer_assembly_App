@@ -57,7 +57,7 @@ export const Navbar = () => {
                                             className='nav__li' 
                                             initial={{ x: matches.small ? 300 : 0 }}
                                             animate={{ x: isOpen ? 0 : (matches.small ? 700 : 0)}}
-                                            transition={{ duration: 1, delay: 0.5 }}
+                                            transition={{ duration: 0.5, delay: 0.3 }}
                                         >
                                             <Button link='/cabinet' text='Зайти в кабинет'/>
                                         </motion.li>
