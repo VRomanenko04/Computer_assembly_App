@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Computer_assembly_App/static/css/main.8d3fd689.css",
-    "main.js": "/Computer_assembly_App/static/js/main.c0f91465.js",
+    "main.css": "/Computer_assembly_App/static/css/main.f7bec297.css",
+    "main.js": "/Computer_assembly_App/static/js/main.6d8c0fb3.js",
     "index.html": "/Computer_assembly_App/index.html",
-    "main.8d3fd689.css.map": "/Computer_assembly_App/static/css/main.8d3fd689.css.map",
-    "main.c0f91465.js.map": "/Computer_assembly_App/static/js/main.c0f91465.js.map"
+    "main.f7bec297.css.map": "/Computer_assembly_App/static/css/main.f7bec297.css.map",
+    "main.6d8c0fb3.js.map": "/Computer_assembly_App/static/js/main.6d8c0fb3.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d3fd689.css",
-    "static/js/main.c0f91465.js"
+    "static/css/main.f7bec297.css",
+    "static/js/main.6d8c0fb3.js"
   ]
 }
