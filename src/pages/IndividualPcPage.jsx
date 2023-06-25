@@ -1,8 +1,11 @@
 import React from 'react';
 import classes from '../styles/individualPC.module.css';
+import {PcItems} from '../data/pcItems';
 
 export const IndividualPcPage = () => {
     const TotalPrice = 799;
+    const pcComponents = PcItems;
+
     return (
         <main className={classes.main}>
             <div className={classes.container}>
