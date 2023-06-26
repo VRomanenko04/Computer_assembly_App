@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import classes from '../styles/individualPC.module.css';
 import { PcItems } from '../data/pcItems.js';
 import { Accordion } from '../components/UI/Accordion/Accordion.jsx';
+import { OrderBtn } from '../components/UI/IndividualBtn/OrderBtn';
 
 const pcComponents = PcItems;
 
@@ -12,7 +13,7 @@ export const IndividualPcPage = () => {
     const [totalPrice, setTotalPrice] = useState(799);
     const [isOrderEnabled, setIsOrderEnabled] = useState(false);
 
-     // Обработчик клика по компоненту
+    // Обработчик клика по компоненту
     const handleComponentClick = (type, component) => {
         setSelectedComponents((prevSelectedComponents) => {
             const updatedComponents = { ...prevSelectedComponents };
@@ -46,6 +47,25 @@ export const IndividualPcPage = () => {
     ? pcComponents.filter((component) => component.type === selectedType)
     : pcComponents;
 
+    //Заказ товара, перенос его в localStor
+    const handleOrderClick = () => {
+        const randomNumber = Math.floor(Math.random() * (1000 - 10 + 1)) + 10;
+        const order = {
+            name: `Индивидуальный заказ #${randomNumber}`,
+            // phone: phone,
+            price: totalPrice,
+        };
+        // Получаем текущие заказы из localStorage
+        const orders = JSON.parse(localStorage.getItem('orders')) || [];
+        // Добавляем новый заказ в массив
+        orders.push(order);
+        // Сохраняем обновленный массив заказов в localStorage
+        localStorage.setItem('orders', JSON.stringify(orders));
+        // Очищаем выбранные компоненты и обнуляем общую сумму
+        setSelectedComponents({});
+        setTotalPrice(799);
+    }
+
     return (
         <main className={classes.main}>
             <div className={classes.container}>
@@ -64,13 +84,10 @@ export const IndividualPcPage = () => {
             </div>
             <div className={classes.total__order}>
                 <p className={classes.total__price}>Конечная сумма: <strong>{totalPrice} грн</strong></p>
-                {isOrderEnabled ? 
-                ( <button className={classes.btn}>Заказать</button> ) : 
-                (
-                    <div className={classes.message}>
-                        <p>Выберите все комплектующие для заказа</p>
-                    </div>
-                )}
+                <OrderBtn
+                    isOrderEnabled={isOrderEnabled}
+                    handleOrderClick={handleOrderClick}
+                />
             </div>
         </main>
     )
