@@ -31,49 +31,6 @@
 .accordionContainer {
     width: 100%;
 }
-.accordionButton {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    height: 50px;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.accordionButtonActive {
-    color: #000;
-    height: 50px;
-    background: rgba(174, 105, 253, 0.75);
-    border-bottom: 1px solid #fff;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.componentList {
-    list-style: none;
-}
-
-.componentItem {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    padding: 20px 0;
-}
-
-.componentItem p {
-    margin-left: 30px;
-}
-
-.componentItemActive {
-    background-color: #fff;
-}
-.componentItemActive p {
-    color: #000;
-}
 
 /* Конечная сумма */
 .total__order {

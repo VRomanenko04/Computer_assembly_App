@@ -1,33 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import classes from '../styles/individualPC.module.css';
 import { PcItems } from '../data/pcItems.js';
-import { motion, AnimatePresence } from 'framer-motion';
+import { Accordion } from '../components/UI/Accordion/Accordion.jsx';
 
 const pcComponents = PcItems;
 
 export const IndividualPcPage = () => {
+    // Состояния компонента
     const [selectedType, setSelectedType] = useState(null);
     const [selectedComponents, setSelectedComponents] = useState({});
     const [totalPrice, setTotalPrice] = useState(799);
     const [isOrderEnabled, setIsOrderEnabled] = useState(false);
 
-    const handleAccordionClick = (type) => {
-        setSelectedType((prevSelectedType) => (prevSelectedType === type ? null : type));
-    };
-
+     // Обработчик клика по компоненту
     const handleComponentClick = (type, component) => {
         setSelectedComponents((prevSelectedComponents) => {
             const updatedComponents = { ...prevSelectedComponents };
-    
+            
+            // Проверяем, был ли компонент уже выбран, и добавляем или удаляем его из списка выбранных компонентов
             if (updatedComponents[type] === component) {
                 delete updatedComponents[type];
             } else {
                 updatedComponents[type] = component;
             }
-    
-            let newTotalPrice = 799; // Установка начальной суммы
-    
+
             // Пересчет суммы на основе выбранных компонентов
+            let newTotalPrice = 799; // Установка начальной суммы
             Object.values(updatedComponents).forEach((selectedComponent) => {
                 newTotalPrice += Number(selectedComponent.price);
             });
@@ -43,6 +41,7 @@ export const IndividualPcPage = () => {
         setIsOrderEnabled(isOrderEnabled);
     }, [selectedComponents]);
 
+    // Фильтрация компонентов на основе выбранного типа
     const filteredComponents = selectedType
     ? pcComponents.filter((component) => component.type === selectedType)
     : pcComponents;
@@ -54,38 +53,13 @@ export const IndividualPcPage = () => {
                     <p>Услуга сборки и тестирования ПК - <strong>799 грн</strong></p>
                 </div>
                 <div className={classes.accordionContainer}>
-                    {['videocard', 'proc', 'motherboard', 'ram', 'cooling', 'memory', 'frame', 'power'].map((type) => (
-                        <div key={type} className={classes.accordion}>
-                            <motion.div
-                                className={selectedType === type ? classes.accordionButtonActive : classes.accordionButton}
-                                onClick={() => handleAccordionClick(type)}
-                            >
-                                {type}
-                            </motion.div>
-                            <AnimatePresence>
-                                {selectedType === type && (
-                                    <motion.ul 
-                                        className={classes.componentList}
-                                        initial={{ opacity: 0 }}
-                                        animate={{ opacity: 1 }}
-                                        exit={{ opacity: 0 }}
-                                    >
-                                        {filteredComponents.map((component) => (
-                                            <motion.li
-                                                key={component.name}
-                                                className={`${classes.componentItem} ${
-                                                    selectedComponents[type] === component ? classes.componentItemActive : ''
-                                                }`}
-                                                onClick={() => handleComponentClick(type, component)}
-                                            >
-                                                <p>{component.name} - <strong>{component.price} грн</strong></p>
-                                            </motion.li>
-                                        ))}
-                                    </motion.ul>
-                                )}
-                            </AnimatePresence>
-                        </div>
-                    ))}
+                    <Accordion 
+                        selectedType={selectedType} 
+                        setSelectedType={setSelectedType}
+                        filteredComponents={filteredComponents}
+                        selectedComponents={selectedComponents}
+                        handleComponentClick={handleComponentClick}
+                    />
                 </div>
             </div>
             <div className={classes.total__order}>
