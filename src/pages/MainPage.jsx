@@ -4,6 +4,8 @@ import { Button } from '../components/UI/Button/Button';
 import { AboutUs } from '../components/Blocks/AboutUsBlock/AboutUs';
 import { Partners } from '../components/Blocks/PartnersBlock/Partners';
 
+import mainPhoto from '../assets/main_comp.png';
+
 export default function MainPage() {
     return (
         <>
@@ -12,7 +14,7 @@ export default function MainPage() {
                 <h1 className={classes.head__text}>От заказа <br /> до индивидуального ПК <br /> всего неделя</h1>
                 <Button link='/individual' text='Заказать ПК' additionalClass={classes.head__btn}/>
             </div>
-            <img className={classes.head__img} src="/Computer_assembly_App/imgs/main_comp.png" alt="" />
+            <img className={classes.head__img} src={mainPhoto} alt="" />
         </header>
         <main>
             <AboutUs/>

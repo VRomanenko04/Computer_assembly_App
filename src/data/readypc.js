@@ -1,3 +1,10 @@
+import computer1 from '../assets/computer1.png';
+import computer2 from '../assets/computer2.png';
+import computer3 from '../assets/computer3.png';
+import computer4 from '../assets/computer4.png';
+import computer5 from '../assets/computer5.png';
+import computer6 from '../assets/computer6.png';
+
 export const readyPc = [
     {
         head: "'Экономная'", 
@@ -5,7 +12,7 @@ export const readyPc = [
         videocard: 'GTX 1060 6GB', 
         ram: 'RAM 8GB', 
         memory: 'HD 500GB | SSD 120GB',
-        photo: '/Computer_assembly_App/imgs/computer1.png',
+        photo: computer1,
         price: '22000',
     },
     {
@@ -14,7 +21,7 @@ export const readyPc = [
         videocard: 'RTX 3060 12GB', 
         ram: 'RAM 32GB', 
         memory: 'M.2 1TB',
-        photo: '/Computer_assembly_App/imgs/computer2.png',
+        photo: computer2,
         price: '45000',
     },
     {
@@ -23,7 +30,7 @@ export const readyPc = [
         videocard: 'NVIDIA RTX 3060 12GB', 
         ram: 'RAM 32GB', 
         memory: 'SSD 960GB',
-        photo: '/Computer_assembly_App/imgs/computer3.png',
+        photo: computer3,
         price: '39500',
     },
     {
@@ -32,7 +39,7 @@ export const readyPc = [
         videocard: 'RTX3070TI 8GB', 
         ram: 'RAM 32 GB', 
         memory: 'M.2 1TB | HDD 120GB',
-        photo: '/Computer_assembly_App/imgs/computer4.png',
+        photo: computer4,
         price: '72000',
     },
     {
@@ -41,7 +48,7 @@ export const readyPc = [
         videocard: 'RTX 3060 12GB', 
         ram: 'RAM 32GB', 
         memory: 'M.2 1TB',
-        photo: '/Computer_assembly_App/imgs/computer5.png',
+        photo: computer5,
         price: '53500',
     },
     {
@@ -50,7 +57,7 @@ export const readyPc = [
         videocard: 'RTX 3060 12GB', 
         ram: 'RAM 16GB', 
         memory: 'SSD 512GB | HDD 2TB',
-        photo: '/Computer_assembly_App/imgs/computer6.png',
+        photo: computer6,
         price: '44000',
     }
 ]

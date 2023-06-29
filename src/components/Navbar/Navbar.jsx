@@ -7,6 +7,8 @@ import { MenuLink } from './MenuLink/MenuLink';
 import { AnimatePresence, motion } from 'framer-motion';
 import Media from 'react-media';
 
+import logo from '../../assets/logo_computer.svg';
+
 export const Navbar = () => {
     //Состояния
     const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +34,7 @@ export const Navbar = () => {
     return (
         <header>
             <Link to='/'>
-                <img className='logo' src="/Computer_assembly_App/imgs/logo_computer.svg" alt="Logo"/>
+                <img className='logo' src={logo} alt="Logo"/>
             </Link>
             <div className='menu__wrapper'>
                 <BurgerBtn isOpen={isOpen} handleMenu={handleMenu}/>
