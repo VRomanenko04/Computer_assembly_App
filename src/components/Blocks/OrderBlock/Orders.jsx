@@ -5,7 +5,7 @@ export const Orders = () => {
     const purchasedPCs = JSON.parse(localStorage.getItem('purchasedPCs')) || [];
     const IndOrders = JSON.parse(localStorage.getItem('orders')) || []; 
 
-    if (purchasedPCs.length > 0) {
+    if (purchasedPCs.length > 0 || IndOrders.length > 0) {
         return (
             <div className={classes.container}>
                 {purchasedPCs.map((pc, index) => (
