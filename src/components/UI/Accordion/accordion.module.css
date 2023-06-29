@@ -10,7 +10,7 @@
 }
 
 .accordionButtonActive {
-    color: #000;
+    color: #fff;
     height: 50px;
     background: rgba(174, 105, 253, 0.75);
     border-bottom: 1px solid #fff;
@@ -32,12 +32,24 @@
 }
 
 .componentItem p {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .componentItemActive {
     background-color: #fff;
 }
+
 .componentItemActive p {
     color: #000;
+}
+
+.item__div {
+    display: flex;
+    flex-direction: row;
+}
+
+.item__div img {
+    margin-left: 10px;
+    max-height: 140px;
+    max-width: 230px;
 }

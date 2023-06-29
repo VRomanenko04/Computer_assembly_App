@@ -17,7 +17,7 @@ export const Accordion = (props) => {
 
     return (
         <>
-            {['videocard', 'proc', 'motherboard', 'ram', 'cooling', 'memory', 'frame', 'power'].map((type) => (
+            {['Видеокарты', 'Процесоры', 'Материнские платы', 'Опперативная память', 'Куллеры', 'Накопители', 'Корпуса', 'Блоки питания'].map((type) => (
                 <div key={type} className={classes.accordion}>
                     <motion.div
                         className={selectedType === type ? classes.accordionButtonActive : classes.accordionButton}
@@ -41,7 +41,10 @@ export const Accordion = (props) => {
                                         }`}
                                         onClick={() => handleComponentClick(type, component)}
                                     >
-                                        <p>{component.name} - <strong>{component.price} грн</strong></p>
+                                        <div className={classes.item__div}>
+                                            <img src={component.photo} alt="" />
+                                            <p>{component.name} - <strong>{component.price} грн</strong></p>
+                                        </div>
                                     </motion.li>
                                 ))}
                             </motion.ul>
