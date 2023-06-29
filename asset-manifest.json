@@ -1,13 +1,27 @@
 {
   "files": {
-    "main.css": "/Computer_assembly_App/static/css/main.f7bec297.css",
-    "main.js": "/Computer_assembly_App/static/js/main.6d8c0fb3.js",
+    "main.css": "/Computer_assembly_App/static/css/main.f4348bfe.css",
+    "main.js": "/Computer_assembly_App/static/js/main.f21dbb60.js",
+    "static/media/main_comp.png": "/Computer_assembly_App/static/media/main_comp.2d148d35b46195d55779.png",
+    "static/media/computer6.png": "/Computer_assembly_App/static/media/computer6.1bdaef648a6fa14d77ed.png",
+    "static/media/about__img.png": "/Computer_assembly_App/static/media/about__img.c9d5106ce75ada76c081.png",
+    "static/media/computer2.png": "/Computer_assembly_App/static/media/computer2.985fc080d8e7e228c923.png",
+    "static/media/computer4.png": "/Computer_assembly_App/static/media/computer4.117851a1266615293cb8.png",
+    "static/media/computer5.png": "/Computer_assembly_App/static/media/computer5.d3e11b2cc6bb7f68a0bc.png",
+    "static/media/computer3.png": "/Computer_assembly_App/static/media/computer3.e85459fdbc7864c47dbb.png",
+    "static/media/computer1.png": "/Computer_assembly_App/static/media/computer1.3314977cd6c9de63d7f4.png",
+    "static/media/logo_msi.png": "/Computer_assembly_App/static/media/logo_msi.3f00b79a72a4b19b5604.png",
+    "static/media/logo_computer.svg": "/Computer_assembly_App/static/media/logo_computer.1215f27f63cf934e8de678e34b9f8010.svg",
+    "static/media/instagram_comp.svg": "/Computer_assembly_App/static/media/instagram_comp.96940d831e802028dcdb1a6da0042cc4.svg",
+    "static/media/youtube_comp.svg": "/Computer_assembly_App/static/media/youtube_comp.3801aeee22457e3fd871934107a58b82.svg",
+    "static/media/Ellipse_partners.svg": "/Computer_assembly_App/static/media/Ellipse_partners.e6963b76830060b95b31c7b902526010.svg",
+    "static/media/facebook_comp.svg": "/Computer_assembly_App/static/media/facebook_comp.fcb75cf4e7066db4da34f973ea8e6c48.svg",
     "index.html": "/Computer_assembly_App/index.html",
-    "main.f7bec297.css.map": "/Computer_assembly_App/static/css/main.f7bec297.css.map",
-    "main.6d8c0fb3.js.map": "/Computer_assembly_App/static/js/main.6d8c0fb3.js.map"
+    "main.f4348bfe.css.map": "/Computer_assembly_App/static/css/main.f4348bfe.css.map",
+    "main.f21dbb60.js.map": "/Computer_assembly_App/static/js/main.f21dbb60.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7bec297.css",
-    "static/js/main.6d8c0fb3.js"
+    "static/css/main.f4348bfe.css",
+    "static/js/main.f21dbb60.js"
   ]
 }
