@@ -43,3 +43,23 @@
 .total__price {
     font-size: 1.4em;
 }
+
+@media screen and (max-width: 500px) {
+    .main {
+        margin: 25px;
+    }
+
+    .service p {
+        margin-inline: 15px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .total__order {
+        flex-direction: column;
+    }
+
+    .total__price {
+        margin-bottom: 30px;
+    }
+}

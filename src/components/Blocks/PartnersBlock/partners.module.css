@@ -60,7 +60,7 @@
         grid-gap: 20px;
     }
     .partner__img {
-        height: 50px;
-        width: 90px;
+        max-height: 80px;
+        width: 100px;
     }
 }
