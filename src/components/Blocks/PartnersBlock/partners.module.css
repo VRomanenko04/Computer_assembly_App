@@ -31,7 +31,7 @@
 }
 
 .partner__img {
-    height: 80px;
+    max-height: 80px;
     width: 150px;
     padding: 10px;
 }
