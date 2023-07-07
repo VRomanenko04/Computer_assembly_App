@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Swal from 'sweetalert2';
 import classes from '../styles/individualPC.module.css';
 import { PcItems } from '../data/pcItems.js';
 import { Accordion } from '../components/UI/Accordion/Accordion.jsx';
@@ -48,51 +47,6 @@ export const IndividualPcPage = () => {
     ? pcComponents.filter((component) => component.type === selectedType)
     : pcComponents;
 
-    //Модальное окно, перенос заказа в localStor
-    const handleModal = () => {
-        Swal.fire({
-            title: 'Введите номер телефона',
-            input: 'text',
-            inputAttributes: {
-                autocapitalize: 'off',
-            },
-            showCancelButton: true,
-            confirmButtonText: 'Заказать',
-            cancelButtonText: 'Отмена',
-            showLoaderOnConfirm: true,
-            inputValidator: (value) => {
-                if (!value) {
-                    return 'Вы должны ввести номер телефона';
-                }
-            },
-            preConfirm: (phone) => {
-                const randomNumber = Math.floor(Math.random() * (1000 - 10 + 1)) + 10;
-                const order = {
-                    name: `Индивидуальный заказ #${randomNumber}`,
-                    phone: phone,
-                    price: totalPrice,
-                };
-                // Получаем текущие заказы из localStorage
-                const orders = JSON.parse(localStorage.getItem('orders')) || [];
-                // Добавляем новый заказ в массив
-                orders.push(order);
-                // Сохраняем обновленный массив заказов в localStorage
-                localStorage.setItem('orders', JSON.stringify(orders));
-                // Очищаем выбранные компоненты и обнуляем общую сумму
-                setSelectedComponents({});
-                setTotalPrice(799);
-            },
-        }).then((result) => {
-            if (result.value) {
-                Swal.fire({
-                    title: 'Ваш заказ подтвержден',
-                    text: 'Ожидайте звонка',
-                    icon: 'success'
-                });
-            }
-        });
-    };
-
     return (
         <main className={classes.main}>
             <div className={classes.container}>
@@ -113,7 +67,9 @@ export const IndividualPcPage = () => {
                 <p className={classes.total__price}>Конечная сумма: <strong>{totalPrice} грн</strong></p>
                 <OrderBtn
                     isOrderEnabled={isOrderEnabled}
-                    handleModal={handleModal}
+                    totalPrice={totalPrice}
+                    setTotalPrice={setTotalPrice}
+                    setSelectedComponents={setSelectedComponents}
                 />
             </div>
         </main>
