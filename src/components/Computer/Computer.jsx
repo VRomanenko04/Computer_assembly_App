@@ -15,15 +15,16 @@ export const Computer = (props) => {
 
     const handleBuyClick = () => {
         Swal.fire({
-            title: 'Введите ваш номер телефона',
+            title: 'Введите номер телефона',
             input: 'text',
             showCancelButton: true,
-            confirmButtonText: 'Купить',
+            confirmButtonText: 'Заказать',
             cancelButtonText: 'Отмена',
             inputValidator: (value) => {
                 if (!value) {
                     return 'Вы должны ввести номер телефона';
-                }
+                } else if (value.length < 10)
+                    return 'Номер телефона введён с ошибкой';
             },
             preConfirm: (phone) => {
                 const purchasedPCs = JSON.parse(localStorage.getItem('purchasedPCs')) || [];

@@ -25,7 +25,8 @@ export const OrderBtn = (props) => {
             inputValidator: (value) => {
                 if (!value) {
                     return 'Вы должны ввести номер телефона';
-                }
+                } else if (value.length < 10)
+                    return 'Номер телефона введён с ошибкой';
             },
             preConfirm: (phone) => {
                 const randomNumber = Math.floor(Math.random() * (1000 - 10 + 1)) + 10;
