@@ -53,6 +53,11 @@ export const Computer = (props) => {
                     Swal.showValidationMessage('Выберите способ оплаты');
                     return false;
                 }
+
+                if (paymentMethod1 && paymentMethod2) {
+                    Swal.showValidationMessage('Выберите только один способ оплаты');
+                    return false;
+                }
         
                 const purchasedPCs = JSON.parse(localStorage.getItem('purchasedPCs')) || [];
                 // Проверка наличия уже существующей покупки с таким же названием
