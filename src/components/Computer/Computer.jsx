@@ -68,6 +68,7 @@ export const Computer = (props) => {
                 // Сохраните название купленного ПК и номер телефона в локальное хранилище
                 const purchasedPC = {
                     name: head,
+                    price: price,
                     phone: phone,
                     client: name,
                     city: city,

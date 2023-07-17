@@ -11,11 +11,14 @@ export const Orders = () => {
                 {purchasedPCs.map((pc, index) => (
                     <div className={classes.order__block} key={index}>
                         <div className={classes.order__info}>
-                            <p>Название товара: {pc.name}</p>
+                            <p>Название товара: Сборка {pc.name}</p>
                             <p>Номер телефона: {pc.phone}</p>
+                            <p>Город доставки: {pc.city}</p>
+                            <p>Способ оплаты: {pc.paymentMethod}</p>
+                            <p>Сумма к оплате: {pc.price}</p>
                         </div>
                         <div className={classes.order__status}>
-                            <p>Статус: <strong>Ожидайте звонка</strong></p>
+                            <p>Статус заказа: <strong>Ожидайте звонка</strong></p>
                         </div>
                     </div>
                 ))}
@@ -24,10 +27,12 @@ export const Orders = () => {
                         <div className={classes.order__info}>
                             <p>{order.name}</p>
                             <p>Номер телефона: {order.phone}</p>
+                            <p>Город доставки: {order.city}</p>
+                            <p>Способ оплаты: {order.paymentMethod}</p>
                             <p>Сумма к оплате: {order.price} грн</p>
                         </div>
                         <div className={classes.order__status}>
-                            <p>Статус: <strong>Ожидайте звонка</strong></p>
+                            <p>Статус заказа: <strong>Ожидайте звонка</strong></p>
                         </div>
                     </div>
                 ))}
