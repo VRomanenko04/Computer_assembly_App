@@ -52,6 +52,11 @@ export const OrderBtn = (props) => {
                     return false;
                 }
 
+                if (paymentMethod1 && paymentMethod2) {
+                    Swal.showValidationMessage('Выберите только один способ оплаты');
+                    return false;
+                }
+
                 const randomNumber = Math.floor(Math.random() * (1000 - 10 + 1)) + 10;
                 const order = {
                     name: `Индивидуальный заказ #${randomNumber}`,
