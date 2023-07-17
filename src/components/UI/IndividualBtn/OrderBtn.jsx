@@ -13,27 +13,57 @@ export const OrderBtn = (props) => {
     //Модальное окно, перенос заказа в localStor по нажатию
     const handleModal = () => {
         Swal.fire({
-            title: 'Введите номер телефона',
-            input: 'text',
-            inputAttributes: {
-                autocapitalize: 'off',
-            },
+            title: 'Форма заказа',
+            html:
+                '<input id="name" class="swal2-input" placeholder="ФИО">' +
+                '<input id="phone" class="swal2-input" placeholder="Телефон">' +
+                '<input id="city" class="swal2-input" placeholder="Город доставки">'+
+                '<div class="swal2-checkbox-container">' +
+                '<input style="margin-right: 10px" type="checkbox" id="paymentMethod1" class="swal2-checkbox">' +
+                '<label style="color: #000" for="paymentMethod1" class="swal2-checkbox-label">Наложенный платеж</label>' +
+                '</div>' +
+                '<div class="swal2-checkbox-container">' +
+                '<input style="margin-right: 10px" type="checkbox" id="paymentMethod2" class="swal2-checkbox">' +
+                '<label style="color: #000" for="paymentMethod2" class="swal2-checkbox-label">Оплата картой</label>' +
+                '</div>',
             showCancelButton: true,
             confirmButtonText: 'Заказать',
             cancelButtonText: 'Отмена',
-            showLoaderOnConfirm: true,
-            inputValidator: (value) => {
-                if (!value) {
-                    return 'Вы должны ввести номер телефона';
-                } else if (value.length < 10)
-                    return 'Номер телефона введён с ошибкой';
-            },
-            preConfirm: (phone) => {
+            preConfirm: () => {
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const city = document.getElementById('city').value;
+                const paymentMethod1 = document.getElementById('paymentMethod1').checked;
+                const paymentMethod2 = document.getElementById('paymentMethod2').checked;
+
+                //Валидация формы
+                if (!name || !phone || !city) {
+                    Swal.showValidationMessage('Пожалуйста, заполните все поля');
+                    return false;
+                }
+        
+                if (phone.length < 10) {
+                    Swal.showValidationMessage('Номер телефона введён с ошибкой');
+                    return false;
+                }
+
+                if (!paymentMethod1 && !paymentMethod2) {
+                    Swal.showValidationMessage('Выберите способ оплаты');
+                    return false;
+                }
+
                 const randomNumber = Math.floor(Math.random() * (1000 - 10 + 1)) + 10;
                 const order = {
                     name: `Индивидуальный заказ #${randomNumber}`,
                     phone: phone,
                     price: totalPrice,
+                    client: name,
+                    city: city,
+                    paymentMethod: (() => {
+                        if (paymentMethod1) {
+                            return 'Наложенный платёж'
+                        } else if (paymentMethod2) { return 'Оплата картой' }
+                    })(),
                 };
                 // Получаем текущие заказы из localStorage
                 const orders = JSON.parse(localStorage.getItem('orders')) || [];
