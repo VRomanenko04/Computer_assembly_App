@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Computer_assembly_App/static/css/main.9f20d5f2.css",
-    "main.js": "/Computer_assembly_App/static/js/main.776f77c8.js",
+    "main.css": "/Computer_assembly_App/static/css/main.3ec93fdc.css",
+    "main.js": "/Computer_assembly_App/static/js/main.de16033c.js",
     "static/media/proc_i3_1.png": "/Computer_assembly_App/static/media/proc_i3_1.6b01fc1cca9e58bdb667.png",
     "static/media/motherboard_7.png": "/Computer_assembly_App/static/media/motherboard_7.46d30c13d6db996db457.png",
     "static/media/proc_i5_1.png": "/Computer_assembly_App/static/media/proc_i5_1.cb184d0f2d68a2175aa0.png",
@@ -71,11 +71,11 @@
     "static/media/Ellipse_partners.svg": "/Computer_assembly_App/static/media/Ellipse_partners.e6963b76830060b95b31c7b902526010.svg",
     "static/media/facebook_comp.svg": "/Computer_assembly_App/static/media/facebook_comp.fcb75cf4e7066db4da34f973ea8e6c48.svg",
     "index.html": "/Computer_assembly_App/index.html",
-    "main.9f20d5f2.css.map": "/Computer_assembly_App/static/css/main.9f20d5f2.css.map",
-    "main.776f77c8.js.map": "/Computer_assembly_App/static/js/main.776f77c8.js.map"
+    "main.3ec93fdc.css.map": "/Computer_assembly_App/static/css/main.3ec93fdc.css.map",
+    "main.de16033c.js.map": "/Computer_assembly_App/static/js/main.de16033c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f20d5f2.css",
-    "static/js/main.776f77c8.js"
+    "static/css/main.3ec93fdc.css",
+    "static/js/main.de16033c.js"
   ]
 }
