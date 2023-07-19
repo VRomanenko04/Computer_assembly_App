@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './orderbtn.module.css';
 import Swal from 'sweetalert2';
+import popUp from '../../../styles/popup.module.css';
 
 export const OrderBtn = (props) => {
     const {
@@ -15,20 +16,25 @@ export const OrderBtn = (props) => {
         Swal.fire({
             title: 'Форма заказа',
             html:
-                '<input id="name" class="swal2-input" placeholder="ФИО">' +
-                '<input id="phone" class="swal2-input" placeholder="Телефон">' +
-                '<input id="city" class="swal2-input" placeholder="Город доставки">'+
+                '<input id="name" style="color: #fff" class="swal2-input" placeholder="ФИО">' +
+                '<input id="phone" style="color: #fff" class="swal2-input" placeholder="Телефон">' +
+                '<input id="city" style="color: #fff" class="swal2-input" placeholder="Город доставки">'+
                 '<div class="swal2-checkbox-container">' +
-                '<input style="margin-right: 10px" type="checkbox" id="paymentMethod1" class="swal2-checkbox">' +
-                '<label style="color: #000" for="paymentMethod1" class="swal2-checkbox-label">Наложенный платеж</label>' +
+                '<input style="margin: 20px 10px 0 0" type="checkbox" id="paymentMethod1" class="swal2-checkbox">' +
+                '<label for="paymentMethod1" class="swal2-checkbox-label">Наложенный платеж</label>' +
                 '</div>' +
                 '<div class="swal2-checkbox-container">' +
-                '<input style="margin-right: 10px" type="checkbox" id="paymentMethod2" class="swal2-checkbox">' +
-                '<label style="color: #000" for="paymentMethod2" class="swal2-checkbox-label">Оплата картой</label>' +
+                '<input style="margin: 20px 10px 0 0" type="checkbox" id="paymentMethod2" class="swal2-checkbox">' +
+                '<label for="paymentMethod2" class="swal2-checkbox-label">Оплата картой</label>' +
                 '</div>',
             showCancelButton: true,
             confirmButtonText: 'Заказать',
             cancelButtonText: 'Отмена',
+            customClass: {
+                popup: popUp.customModal,
+                confirmButton: popUp.customConfirm,
+                title: popUp.customTitle,
+            },
             preConfirm: () => {
                 const name = document.getElementById('name').value;
                 const phone = document.getElementById('phone').value;
