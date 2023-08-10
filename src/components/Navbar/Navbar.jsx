@@ -43,29 +43,27 @@ export const Navbar = () => {
                     <Media queries={{ small: '(max-width: 1040px)' }}>
                     {(matches) => (
                         <AnimatePresence initial={false}>
-                            <motion.div
+                            <motion.ul
                                 className={`nav__list ${isOpen ? 'active__menu' : ''}`}
                                 initial={{ x: matches.small ? 300 : 0 }}
                                 animate={{ x: isOpen ? 0 : (matches.small ? 500 : 0)}}
                                 transition={{ duration: 0.5 }}
                             >
-                                <ul className={`nav__list ${isOpen ? 'active__menu' : ''}`}>
-                                    <MenuLink link='/' text='Главная' matches={matches} isOpen={isOpen} />
-                                    <MenuLink link='/ready' text='Готовые ПК' matches={matches} isOpen={isOpen} />
-                                    <MenuLink link='/individual' text='Индивидуальная сборка' matches={matches} isOpen={isOpen} />
-                                    <MenuLink link='/contact' text='Контакты' matches={matches} isOpen={isOpen} />
-                                    {location.pathname !== '/cabinet' && (
-                                        <motion.li 
-                                            className='nav__li' 
-                                            initial={{ x: matches.small ? 300 : 0 }}
-                                            animate={{ x: isOpen ? 0 : (matches.small ? 700 : 0)}}
-                                            transition={{ duration: 0.5, delay: 0.3 }}
-                                        >
-                                            <Button link='/cabinet' text='Зайти в кабинет'/>
-                                        </motion.li>
-                                    )}
-                                </ul>
-                            </motion.div>
+                                <MenuLink link='/' text='Главная' matches={matches} isOpen={isOpen} />
+                                <MenuLink link='/ready' text='Готовые ПК' matches={matches} isOpen={isOpen} />
+                                <MenuLink link='/individual' text='Индивидуальная сборка' matches={matches} isOpen={isOpen} />
+                                <MenuLink link='/contact' text='Контакты' matches={matches} isOpen={isOpen} />
+                                {location.pathname !== '/cabinet' && (
+                                    <motion.li 
+                                        className='nav__li'
+                                        initial={{ x: matches.small ? 300 : 0 }}
+                                        animate={{ x: isOpen ? 0 : (matches.small ? 500 : 0)}}
+                                        transition={{ duration: 0.9 }}
+                                    >
+                                        <Button link='/cabinet' text='Зайти в кабинет'/>
+                                    </motion.li>
+                                )}
+                            </motion.ul>
                         </AnimatePresence>
                     )}
                     </Media>
